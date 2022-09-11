@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url("../img/cursor.png"), auto;
+}
+
+header {
+  width: 100%;
+  height: 800px;
+  background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,fit=crop/stornowayj2oil/heroimage-A1aVeGeGzkheyzwj.png");
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.logo {
+  font-family: "Poppins";
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+
+nav {
+  display: flex;
+}
+
+.nav_link {
+  display: block;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 20px;
+  transition: all 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav_link::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0px;
+  left: 100px;
+  transition: all 0.3s;
+}
+
+.nav_link:hover::before {
+  left: 0px;
+}
+
+.header_title {
+  display: block;
+  color: #fff;
+  padding-top: 250px;
+  padding-bottom: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 90px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+#header_button {
+  position: absolute;
+  left: -20px;
+}
+
+#header_button::before {
+  box-sizing: border-box;
+  content: "Get a Quote";
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  background-color: #fff;
+  width: 210px;
+  height: 70px;
+  transition: all 0.2s;
+  position: absolute;
+  left: calc(50vw - 110px);
+  z-index: 0;
+}
+
+#header_button:hover::before {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+#header_button:checked::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://cdn.discordapp.com/attachments/995011059809255474/1018611882757738556/ce8f08c6229b5efd.png");
+  background-size: cover;
+  z-index: 10;
+}
+
+.s-1 {
+  height: 800px;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-1_title {
+  color: #000000;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 60px;
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+
+.s-1_p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 15px;
+  padding-bottom: 50px;
+}
+
+.s-1_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: #fff;
+  background-color: #000000;
+  width: 210px;
+  height: 70px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.s-1_button:hover {
+  background-color: #2e3538;
+}
+
+.s-2 {
+  text-align: center;
+  height: 800px;
+  width: 100%;
+  background-color: #000000;
+}
+
+.container > h2 {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.wraper_img {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.items-img {
+  width: 32%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.items-img span {
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.items-img img {
+  width: 100%;
+}
+
+.button_img {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: calc(50% - 35px);
+  left: -100px;
+  transition: all 0.3s ease-out;
+}
+
+.items-img::before {
+  content: "";
+  width: 100%;
+  height: 240px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.items-img:hover .button_img {
+  left: calc(50% - 40px);
+}
+
+.items-img:hover:before {
+  opacity: 1;
+}
+
+.s-2_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: #000000;
+  background-color: #fff;
+  width: 210px;
+  height: 70px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.s-2_button:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.s-3 {
+  height: 700px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.wraper-s-3 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 200px;
+}
+
+.s-3_title-1 {
+  width: 50%;
+  height: 200px;
+}
+
+.s-3_title {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-bottom: 30px;
+}
+
+.s-3_p {
+  color: #000000;
+  font-family: "Poppins";
+  font-weight: 400;
+  padding-bottom: 80px;
+}
+
+.s-3_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #000;
+  width: 210px;
+  height: 70px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.s-3_button:hover {
+  background-color: #2e3538;
+}
+
+.wraper-number {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.number {
+  color: #000000;
+  font-size: 70px;
+  font-family: "Poppins";
+  font-weight: 600;
+  padding-right: 25px;
+}
+
+.s-3_text {
+  color: #000;
+  font-size: 22px;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.s-4 {
+  position: relative;
+  height: 700px;
+  width: 100%;
+  background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,fit=crop/stornowayj2oil/careers_image-dOqjMWK1qRT81QvX.png");
+  background-size: cover;
+}
+
+.s-4_title-1 {
+  width: 400px;
+  position: absolute;
+  top: calc(50% - 200px);
+  right: 0;
+}
+
+.s-4_title {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+.s-4_p {
+  color: #000000;
+  font-family: "Poppins";
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+
+.s-4_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #000;
+  width: 210px;
+  height: 70px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.s-4_button:hover {
+  background-color: #2e3538;
+}
+
+footer {
+  background-color: #000;
+  height: 400px;
+}
+
+.logo-footer {
+  font-family: "Poppins";
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 100px;
+  padding-left: 50px;
+}
